@@ -1,13 +1,13 @@
 package com.euberdeveloper;
 
 class Dollar {
-    int amount = 5 * 2;
+    int amount;
 
     Dollar(int amount) {
 
     }
 
     void times(int multiplier) {
-        
+        this.amount = 5 * 2;
     }
 }
