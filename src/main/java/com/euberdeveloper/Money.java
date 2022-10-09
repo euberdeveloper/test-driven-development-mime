@@ -1,6 +1,6 @@
 package com.euberdeveloper;
 
-abstract public class Money {
+public class Money {
     protected int amount;
     protected String currency;
 
@@ -17,7 +17,9 @@ abstract public class Money {
         return new Franc(amount, "CHF");
     }
 
-    abstract Money times(int multiplier);
+    public Money times(int multiplier) {
+        return null;
+    }
 
     public boolean equals(Object object) {
         Money money = (Money) object;
