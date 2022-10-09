@@ -10,8 +10,8 @@ public class Bank {
     }
 
     public int rate(String from, String to) {
-        Integer rate = rates.get(new Pair(from, to));
-        return rate.intValue();
+        return from.equals(to) ? 1 : rates.get(new Pair(from, to));
+
     }
 
     public void addRate(String from, String to, int rate) {
