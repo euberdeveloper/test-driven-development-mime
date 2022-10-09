@@ -5,6 +5,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
+import org.junit.experimental.theories.suppliers.TestedOn;
 
 public class AppTest {
     @Test
@@ -81,6 +82,17 @@ public class AppTest {
     @Test
     public void testIdentityRate() {
         assertEquals(1, new Bank().rate("USD", "USD"));
+    }
+
+    @Test
+    public void testSumPlusMoney() {
+        Expression fiveBucks = Money.dollar(5);
+        Expression tenFrancs = Money.franc(10);
+        Bank bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        Expression sum = new Sum(fiveBucks, tenFrancs).plus(fiveBucks);
+        Money result = bank.reduce(sum, "USD");
+        assertEquals(Money.dollar(15), result);
     }
 
 }
