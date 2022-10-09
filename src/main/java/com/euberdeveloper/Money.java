@@ -4,11 +4,6 @@ public class Money {
     protected int amount;
     protected String currency;
 
-    public Money(int amount, String currency) {
-        this.amount = amount;
-        this.currency = currency;
-    }
-
     public static Money dollar(int amount) {
         return new Dollar(amount, "USD");
     }
@@ -17,13 +12,13 @@ public class Money {
         return new Franc(amount, "CHF");
     }
 
-    public Money times(int multiplier) {
-        return null;
+    public Money(int amount, String currency) {
+        this.amount = amount;
+        this.currency = currency;
     }
 
-    public boolean equals(Object object) {
-        Money money = (Money) object;
-        return this.amount == money.amount && getClass().equals(money.getClass());
+    public Money times(int multiplier) {
+        return null;
     }
 
     public String currency() {
@@ -33,6 +28,12 @@ public class Money {
     @Override
     public String toString() {
         return this.amount + " " + this.currency;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        Money money = (Money) object;
+        return this.amount == money.amount && this.currency().equals(money.currency());
     }
 
 }
