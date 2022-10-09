@@ -3,7 +3,7 @@ package com.euberdeveloper;
 import java.util.Hashtable;
 
 public class Bank {
-    public Hashtable<String, Pair> rates = new Hashtable<String, Pair>();
+    public Hashtable<Pair, Integer> rates = new Hashtable<Pair, Integer>();
 
     public Money reduce(Expression source, String to) {
         return source.reduce(this, to);
