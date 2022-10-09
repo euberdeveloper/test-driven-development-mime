@@ -17,12 +17,16 @@ public class Money {
         this.currency = currency;
     }
 
+    public String currency() {
+        return this.currency;
+    }
+
     public Money times(int multiplier) {
         return null;
     }
 
-    public String currency() {
-        return this.currency;
+    public Money plus(Money addend) {
+        return new Money(this.amount + addend.amount, this.currency);
     }
 
     @Override
