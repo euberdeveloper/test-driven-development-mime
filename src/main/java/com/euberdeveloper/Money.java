@@ -30,4 +30,9 @@ public class Money {
         return this.currency;
     }
 
+    @Override
+    public String toString() {
+        return this.amount + " " + this.currency;
+    }
+
 }
