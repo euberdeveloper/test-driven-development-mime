@@ -4,6 +4,8 @@
 # test-driven-development-mime
 A repo in which I reproduced what showed in the book "Test driven development" from Kent Beck
 
+![Test-Driven Development by example - Kent Beck's Book](https://github.com/euberdeveloper/test-driven-development-mime/raw/main/docs/book.jpg)
+
 ## Project purpose
 
 [Test-Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) is a software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software development by repeatedly testing the software against all test cases. This is as opposed to software being developed first and test cases created later.
