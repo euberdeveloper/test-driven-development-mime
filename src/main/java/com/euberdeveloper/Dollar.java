@@ -1,8 +1,6 @@
 package com.euberdeveloper;
 
 public class Dollar extends Money {
-    private final int amount;
-
     public Dollar(int amount) {
         this.amount = amount;
     }
