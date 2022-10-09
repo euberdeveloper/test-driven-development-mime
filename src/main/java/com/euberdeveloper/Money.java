@@ -5,7 +5,7 @@ abstract public class Money {
     protected String currency;
 
     public static Money dollar(int amount) {
-        return new Dollar(amount);
+        return new Dollar(amount, "USD");
     }
 
     public static Money franc(int amount) {
