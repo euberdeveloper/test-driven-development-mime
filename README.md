@@ -1,3 +1,7 @@
+![Test](https://github.com/euberdeveloper/test-driven-development-mime/workflows/Test/badge.svg)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![License](https://img.shields.io/npm/l/test-driven-development-mime.svg)](https://github.com/euberdeveloper/test-driven-development-mime/blob/main/LICENSE)
+
 # test-driven-development-mime
 A repo in which I reproduced what showed in the book "Test driven development" from Kent Beck
 
