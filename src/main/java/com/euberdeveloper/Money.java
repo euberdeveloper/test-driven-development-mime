@@ -32,6 +32,12 @@ public class Money implements Expression {
 
     @Override
     public Expression plus(Expression addend) {
+        if (addend instanceof Money) {
+            Money otherMoney = (Money) addend;
+            if (otherMoney.currency() == this.currency) {
+                return new Money(this.amount + otherMoney.amount, this.currency);
+            }
+        }
         return new Sum(this, addend);
     }
 

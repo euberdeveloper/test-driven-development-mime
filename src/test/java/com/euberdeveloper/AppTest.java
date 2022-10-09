@@ -109,6 +109,7 @@ public class AppTest {
     public void testPlusSameCurrencyReturnsMoney() {
         Expression sum = Money.dollar(1).plus(Money.dollar(1));
         assertTrue(sum instanceof Money);
+        assertEquals(Money.dollar(2), sum);
     }
 
 }
