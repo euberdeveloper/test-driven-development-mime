@@ -10,7 +10,7 @@ public class Franc extends Money {
     }
 
     public boolean equals(Object object) {
-        Franc franc = (Franc) object;
+        Money franc = (Money) object;
         return this.amount == franc.amount;
     }
 
